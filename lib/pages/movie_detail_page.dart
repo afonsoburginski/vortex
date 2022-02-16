@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:netflix_clone/pages/play_movie_page.dart';
-import 'package:netflix_clone/theme/color.dart';
-import 'package:netflix_clone/util/home_page_json.dart';
-import 'package:netflix_clone/util/moive_detail_page_json.dart';
+import 'package:vortex/pages/play_movie_page.dart';
+import 'package:vortex/theme/color.dart';
+import 'package:vortex/util/home_page_json.dart';
+import 'package:vortex/util/moive_detail_page_json.dart';
 
 class MovieDetailPage extends StatefulWidget {
   @override
@@ -31,30 +31,24 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
               Container(
                 height: size.height * 0.4,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(20),
-                    bottomRight: Radius.circular(20)
-                  ),
-                  image: DecorationImage(
-                    image: NetworkImage(sliders[0]),
-                    fit: BoxFit.cover
-                  )
-                ),
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(20),
+                        bottomRight: Radius.circular(20)),
+                    image: DecorationImage(
+                        image: NetworkImage(sliders[0]), fit: BoxFit.cover)),
                 child: SafeArea(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       IconButton(
-                        icon: Icon(Icons.arrow_back_ios, color: white),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        }
-                      ),
+                          icon: Icon(Icons.arrow_back_ios, color: white),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          }),
                       IconButton(
-                        icon: Icon(LineIcons.heart, color: white),
-                        onPressed: () {}
-                      ),
+                          icon: Icon(LineIcons.heart, color: white),
+                          onPressed: () {}),
                     ],
                   ),
                 ),
@@ -69,9 +63,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     height: 58,
                     width: size.width,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: lightBlack
-                    ),
+                        borderRadius: BorderRadius.circular(40),
+                        color: lightBlack),
                     child: Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -79,7 +72,10 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                         children: List.generate(menuBars.length, (index) {
                           return GestureDetector(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (_) => PlayMoviePage()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (_) => PlayMoviePage()));
                             },
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -88,13 +84,18 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                   height: 30,
                                   width: 30,
                                   decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    border: Border.all(width: 1, color: red)
+                                      shape: BoxShape.circle,
+                                      border: Border.all(width: 1, color: red)),
+                                  child: Center(
+                                    child: menuBars[index]['icon'],
                                   ),
-                                  child: Center(child: menuBars[index]['icon'],),
                                 ),
                                 SizedBox(height: 5),
-                                Text(menuBars[index]['name'], style: TextStyle(color: lightGrey, fontSize: 11),)
+                                Text(
+                                  menuBars[index]['name'],
+                                  style:
+                                      TextStyle(color: lightGrey, fontSize: 11),
+                                )
                               ],
                             ),
                           );
@@ -118,9 +119,16 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     children: [
                       Row(
                         children: [
-                          Text(percentageMatch, style: TextStyle(color: green, fontWeight: FontWeight.bold),),
+                          Text(
+                            percentageMatch,
+                            style: TextStyle(
+                                color: green, fontWeight: FontWeight.bold),
+                          ),
                           SizedBox(width: 10),
-                          Text(year, style: TextStyle(color: lightGrey),),
+                          Text(
+                            year,
+                            style: TextStyle(color: lightGrey),
+                          ),
                           SizedBox(width: 10),
                           Container(
                             decoration: BoxDecoration(
@@ -128,19 +136,26 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                               borderRadius: BorderRadius.circular(5),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 1, horizontal: 3),
-                              child: Text(age, style: TextStyle(fontSize: 13),),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 1, horizontal: 3),
+                              child: Text(
+                                age,
+                                style: TextStyle(fontSize: 13),
+                              ),
                             ),
                           ),
                           SizedBox(width: 10),
-                          Text(time, style: TextStyle(color: lightGrey),)
+                          Text(
+                            time,
+                            style: TextStyle(color: lightGrey),
+                          )
                         ],
                       ),
                       SizedBox(height: 15),
                       Text(
-                        description, 
-                        maxLines: 3, 
-                        overflow: TextOverflow.ellipsis, 
+                        description,
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(color: white),
                       ),
                       SizedBox(height: 10),
@@ -149,14 +164,11 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            "Cast & Crew",
-                            style: TextStyle(
-                              color: white, 
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500
-                            )
-                          ),
+                          Text("Cast & Crew",
+                              style: TextStyle(
+                                  color: white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500)),
                           Text(
                             "See All",
                             style: TextStyle(color: lightRed, fontSize: 12),
@@ -172,30 +184,27 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     children: List.generate(castAndCrews.length, (index) {
                       return Padding(
                         padding: EdgeInsets.only(
-                          top: 20,
-                          left: index == 0 ? 15 : 10,
-                          right: index == (castAndCrews.length - 1) ? 15 : 0,
-                          bottom: 20
-                        ),
+                            top: 20,
+                            left: index == 0 ? 15 : 10,
+                            right: index == (castAndCrews.length - 1) ? 15 : 0,
+                            bottom: 20),
                         child: Stack(
                           children: [
                             Container(
                               height: 130,
                               width: 120,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: lightGrey.withOpacity(0.2),
-                                    blurRadius: 7,
-                                    offset: Offset(0, 3)
-                                  )
-                                ],
-                                image: DecorationImage(
-                                  image: NetworkImage(castAndCrews[index]['imageUrl']),
-                                  fit: BoxFit.cover
-                                )
-                              ),
+                                  borderRadius: BorderRadius.circular(10),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: lightGrey.withOpacity(0.2),
+                                        blurRadius: 7,
+                                        offset: Offset(0, 3))
+                                  ],
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          castAndCrews[index]['imageUrl']),
+                                      fit: BoxFit.cover)),
                             ),
                             Positioned(
                               left: 0,
@@ -203,10 +212,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                               bottom: 2,
                               child: Center(
                                 child: Text(
-                                  castAndCrews[index]['name'], 
-                                  style: TextStyle(
-                                    color: lightGrey
-                                  ),
+                                  castAndCrews[index]['name'],
+                                  style: TextStyle(color: lightGrey),
                                 ),
                               ),
                             ),
@@ -220,7 +227,9 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
                     children: [
-                      Divider(color: white,),
+                      Divider(
+                        color: white,
+                      ),
                       SizedBox(height: 20),
                       Row(
                         children: [
@@ -232,25 +241,28 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                 Container(
                                   width: (size.width - 70) * 0.35,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: lightGrey.withOpacity(0.2),
-                                        blurRadius: 7,
-                                        offset: Offset(0, 3),
-                                      ),
-                                    ],
-                                    image: DecorationImage(
-                                      image: NetworkImage(directorImage),
-                                      fit: BoxFit.cover
-                                    )
-                                  ),
+                                      borderRadius: BorderRadius.circular(10),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: lightGrey.withOpacity(0.2),
+                                          blurRadius: 7,
+                                          offset: Offset(0, 3),
+                                        ),
+                                      ],
+                                      image: DecorationImage(
+                                          image: NetworkImage(directorImage),
+                                          fit: BoxFit.cover)),
                                 ),
                                 Positioned(
                                   left: 0,
                                   right: 0,
                                   bottom: 2,
-                                  child: Center(child: Text(directorName, style: TextStyle(color: lightGrey),),),
+                                  child: Center(
+                                    child: Text(
+                                      directorName,
+                                      style: TextStyle(color: lightGrey),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
@@ -263,17 +275,16 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Director", 
+                                  "Director",
                                   style: TextStyle(color: grey, fontSize: 20),
                                 ),
                                 Flexible(
-                                  child: Text(
-                                    directorDescription,
-                                    maxLines: 3,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(color: white, fontSize: 12),
-                                  )
-                                ),
+                                    child: Text(
+                                  directorDescription,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(color: white, fontSize: 12),
+                                )),
                               ],
                             ),
                           ),
@@ -282,26 +293,28 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 40,),
+                SizedBox(
+                  height: 40,
+                ),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: List.generate(netflixOriginals.length, (index) {
                       return Padding(
                         padding: EdgeInsets.only(
-                          left: index == 0 ? 15 : 10,
-                          right: index == (netflixOriginals.length - 1) ? 15 : 0
-                        ),
+                            left: index == 0 ? 15 : 10,
+                            right: index == (netflixOriginals.length - 1)
+                                ? 15
+                                : 0),
                         child: Container(
                           height: 180,
                           width: 125,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: NetworkImage(netflixOriginals[index]),
-                              fit: BoxFit.cover,
-                            )
-                          ),
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                image: NetworkImage(netflixOriginals[index]),
+                                fit: BoxFit.cover,
+                              )),
                         ),
                       );
                     }),

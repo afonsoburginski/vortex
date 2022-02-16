@@ -3,12 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:flutter/src/material/navigation_bar.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
-import 'package:netflix_clone/pages/coming_soon_page.dart';
-import 'package:netflix_clone/pages/download_page.dart';
-import 'package:netflix_clone/pages/home_page.dart';
-import 'package:netflix_clone/pages/search_page.dart';
-import 'package:netflix_clone/theme/color.dart';
-import 'package:netflix_clone/util/constant.dart';
+import 'package:vortex/pages/coming_soon_page.dart';
+import 'package:vortex/pages/download_page.dart';
+import 'package:vortex/pages/home_page.dart';
+import 'package:vortex/pages/search_page.dart';
+import 'package:vortex/theme/color.dart';
+import 'package:vortex/util/constant.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
 
 class RootPage extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_clone/theme/color.dart';
+import 'package:vortex/theme/color.dart';
 
 class DownloadPage extends StatefulWidget {
   @override
@@ -11,7 +11,12 @@ class _DownloadPageState extends State<DownloadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: black,
-      body: Center(child: Text("Download Page", style: TextStyle(color: white),),),
+      body: Center(
+        child: Text(
+          "Download Page",
+          style: TextStyle(color: white),
+        ),
+      ),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meedu_player/meedu_player.dart';
-import 'package:netflix_clone/theme/color.dart';
-import 'package:netflix_clone/util/play_movie_page_json.dart';
+import 'package:vortex/theme/color.dart';
+import 'package:vortex/util/play_movie_page_json.dart';
 import 'package:wakelock/wakelock.dart';
 
 class PlayMoviePage extends StatefulWidget {
@@ -10,12 +10,11 @@ class PlayMoviePage extends StatefulWidget {
 }
 
 class _PlayMoviePageState extends State<PlayMoviePage> {
-  final MeeduPlayerController _meeduPlayerController = MeeduPlayerController(
-    colorTheme: red
-  );
+  final MeeduPlayerController _meeduPlayerController =
+      MeeduPlayerController(colorTheme: red);
 
   int count = 0;
-  
+
   @override
   void initState() {
     super.initState();
@@ -26,15 +25,10 @@ class _PlayMoviePageState extends State<PlayMoviePage> {
 
   _init() async {
     // launch the player in fullscreen mode
-    await this._meeduPlayerController.launchAsFullscreen(
-      context, 
-      dataSource: DataSource(
-        type: DataSourceType.network,
-        source: movieUrl
-      ),
-      autoplay: true,
-      header: header
-    );
+    await this._meeduPlayerController.launchAsFullscreen(context,
+        dataSource: DataSource(type: DataSourceType.network, source: movieUrl),
+        autoplay: true,
+        header: header);
   }
 
   Widget get header {
@@ -42,15 +36,19 @@ class _PlayMoviePageState extends State<PlayMoviePage> {
       child: Row(
         children: [
           IconButton(
-            icon: Icon(Icons.arrow_back_ios, color: white,),
-            onPressed: () {
-              // turn back
-              Navigator.of(context).popUntil((route) => count++ >= 2);
-            }
-          ),
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: white,
+              ),
+              onPressed: () {
+                // turn back
+                Navigator.of(context).popUntil((route) => count++ >= 2);
+              }),
           Expanded(
-            child: Text(name, style: TextStyle(color: white),)
-          ),
+              child: Text(
+            name,
+            style: TextStyle(color: white),
+          )),
         ],
       ),
     );
