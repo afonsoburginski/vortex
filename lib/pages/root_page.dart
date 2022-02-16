@@ -32,13 +32,15 @@ class _RootPageState extends State<RootPage> {
 
   Widget getAppBar() {
     return PreferredSize(
-      preferredSize: Size.fromHeight(50),
+      preferredSize: const Size.fromHeight(50),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-                icon: Icon(LineIcons.bars), color: white, onPressed: () {}),
+                icon: const Icon(LineIcons.bars),
+                color: white,
+                onPressed: () {}),
             SvgPicture.asset(
               "assets/images/logo.svg",
               width: 80,
@@ -49,7 +51,7 @@ class _RootPageState extends State<RootPage> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(width: 1, color: white),
-                image: DecorationImage(
+                image: const DecorationImage(
                     image: NetworkImage(profile), fit: BoxFit.cover),
               ),
             ),
@@ -76,21 +78,21 @@ class _RootPageState extends State<RootPage> {
     return navigationBar(
       selectedIndex: selectedIndex,
       showActiveButtonText: false,
-      textStyle: TextStyle(color: white, fontWeight: FontWeight.bold),
+      textStyle: const TextStyle(color: white, fontWeight: FontWeight.bold),
       navigationBarButtons: [
-        NavigationBarButton(
+        const NavigationBarButton(
           icon: LineIcons.home,
           backgroundColor: black,
         ),
-        NavigationBarButton(
+        const NavigationBarButton(
           icon: LineIcons.search,
           backgroundColor: black,
         ),
-        NavigationBarButton(
+        const NavigationBarButton(
           icon: LineIcons.youtube,
           backgroundColor: black,
         ),
-        NavigationBarButton(
+        const NavigationBarButton(
           icon: LineIcons.download,
           backgroundColor: black,
         ),

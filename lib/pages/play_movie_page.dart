@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:meedu_player/meedu_player.dart';
 import 'package:vortex/theme/color.dart';
@@ -19,6 +21,7 @@ class _PlayMoviePageState extends State<PlayMoviePage> {
   void initState() {
     super.initState();
     // The following line will enable the Android and iOs wakelock
+    var Wakelock;
     Wakelock.enable();
     _init();
   }
