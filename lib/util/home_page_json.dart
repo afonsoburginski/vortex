@@ -1,5 +1,3 @@
-
-
 const List sliders = [
   'https://occ-0-1001-999.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd0nma8uLnnX-XCHERJ8V1Yn6PE44b1i8NOap3-4Xe7-bPAAJV6IREMBbBADEK0vflh7lPBnWi2iYsEPaN9UZgjZvqQh.jpg?r=cc1',
   'https://6.vikiplatform.com/image/6967e2f0d71f48aa9703561d11b85865.jpg?x=b&a=0x0',
@@ -13,39 +11,46 @@ const List sliders = [
 
 const List continueWatchings = [
   {
-    "name": "The Yin...",
-    "timeline": 80.0,
-    "imageUrl": "https://occ-0-1001-999.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd0nma8uLnnX-XCHERJ8V1Yn6PE44b1i8NOap3-4Xe7-bPAAJV6IREMBbBADEK0vflh7lPBnWi2iYsEPaN9UZgjZvqQh.jpg?r=cc1"
+    "name": "Assistir",
+    "timeline": 85.0,
+    "imageUrl":
+        "https://occ-0-1001-999.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd0nma8uLnnX-XCHERJ8V1Yn6PE44b1i8NOap3-4Xe7-bPAAJV6IREMBbBADEK0vflh7lPBnWi2iYsEPaN9UZgjZvqQh.jpg?r=cc1"
   },
   {
     "name": "S1:E8",
     "timeline": 60.0,
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMmMwMTE0ZTYtMTI0ZC00OWVlLWIzMWEtMGQzMTgxYjViNTc2XkEyXkFqcGdeQXVyNjQwNDMxNTk@._V1_.jpg"
+    "imageUrl":
+        "https://m.media-amazon.com/images/M/MV5BMmMwMTE0ZTYtMTI0ZC00OWVlLWIzMWEtMGQzMTgxYjViNTc2XkEyXkFqcGdeQXVyNjQwNDMxNTk@._V1_.jpg"
   },
   {
     "name": "S2:E12",
     "timeline": 50.0,
-    "imageUrl": "https://d263ao8qih4miy.cloudfront.net/wp-content/uploads/2018/08/premiere_voice2.jpg"
+    "imageUrl":
+        "https://d263ao8qih4miy.cloudfront.net/wp-content/uploads/2018/08/premiere_voice2.jpg"
   },
   {
     "name": "Space...",
     "timeline": 70.0,
-    "imageUrl": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:357/h:536/q:75/https://bleedingcool.com/wp-content/uploads/2021/01/poster-1609924606-compressed1.jpg"
+    "imageUrl":
+        "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:357/h:536/q:75/https://bleedingcool.com/wp-content/uploads/2021/01/poster-1609924606-compressed1.jpg"
   },
   {
     "name": "S1:E10",
     "timeline": 40.0,
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BYjA2M2YxMjQtOTIwOS00ODIyLThmYWEtM2Y1NGFkNjI1YmNkXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+    "imageUrl":
+        "https://m.media-amazon.com/images/M/MV5BYjA2M2YxMjQtOTIwOS00ODIyLThmYWEtM2Y1NGFkNjI1YmNkXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
   },
   {
     "name": "S1:E3",
     "timeline": 50.0,
-    "imageUrl": "https://myhabithub.files.wordpress.com/2019/05/71383fccd798b55edffebba533b5693c474c3ab2.jpg"
+    "imageUrl":
+        "https://myhabithub.files.wordpress.com/2019/05/71383fccd798b55edffebba533b5693c474c3ab2.jpg"
   },
   {
     "name": "S1:E2",
     "timeline": 30.0,
-    "imageUrl": "https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/XsrytRUxks8BtTRf9HNlZkW2tvY/AAAABVDW4BeDH83t6eAasWcQlrPHcgq9bS8oOZ-fqRblwIkP80X2xTEXiEqAUfC4TXJXmZF0IiWyAgcCSvViW4NpkGugIJP1BEymJA.jpg"
+    "imageUrl":
+        "https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/XsrytRUxks8BtTRf9HNlZkW2tvY/AAAABVDW4BeDH83t6eAasWcQlrPHcgq9bS8oOZ-fqRblwIkP80X2xTEXiEqAUfC4TXJXmZF0IiWyAgcCSvViW4NpkGugIJP1BEymJA.jpg"
   },
 ];
 

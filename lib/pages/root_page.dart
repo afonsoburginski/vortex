@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:flutter/src/material/navigation_bar.dart';
-import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
 import 'package:vortex/pages/coming_soon_page.dart';
 import 'package:vortex/pages/download_page.dart';
 import 'package:vortex/pages/home_page.dart';
@@ -32,15 +30,16 @@ class _RootPageState extends State<RootPage> {
 
   Widget getAppBar() {
     return PreferredSize(
-      preferredSize: const Size.fromHeight(50),
+      preferredSize: Size.fromHeight(50),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-                icon: const Icon(LineIcons.bars),
-                color: white,
-                onPressed: () {}),
+              icon: Icon(LineIcons.bars),
+              color: white,
+              onPressed: () {},
+            ),
             SvgPicture.asset(
               "assets/images/logo.svg",
               width: 80,
@@ -51,7 +50,7 @@ class _RootPageState extends State<RootPage> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(width: 1, color: white),
-                image: const DecorationImage(
+                image: DecorationImage(
                     image: NetworkImage(profile), fit: BoxFit.cover),
               ),
             ),
@@ -74,25 +73,24 @@ class _RootPageState extends State<RootPage> {
   }
 
   Widget getFloatingActionButton() {
-    var navigationBar = NavigationBar;
-    return navigationBar(
+    return NavigationBar(
       selectedIndex: selectedIndex,
       showActiveButtonText: false,
-      textStyle: const TextStyle(color: white, fontWeight: FontWeight.bold),
+      textStyle: TextStyle(color: white, fontWeight: FontWeight.bold),
       navigationBarButtons: [
-        const NavigationBarButton(
+        NavigationBarButton(
           icon: LineIcons.home,
           backgroundColor: black,
         ),
-        const NavigationBarButton(
+        NavigationBarButton(
           icon: LineIcons.search,
           backgroundColor: black,
         ),
-        const NavigationBarButton(
+        NavigationBarButton(
           icon: LineIcons.youtube,
           backgroundColor: black,
         ),
-        const NavigationBarButton(
+        NavigationBarButton(
           icon: LineIcons.download,
           backgroundColor: black,
         ),

@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           options: CarouselOptions(
             enlargeCenterPage: true,
             aspectRatio: 2.0,
-            viewportFraction: 0.93,
+            viewportFraction: 0.96,
             autoPlay: true,
           ),
           items: List.generate(sliders.length, (index) {
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(width: 5),
               Text(
-                "WATCHING",
+                "ASSISTINDO",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -156,12 +156,12 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MY",
+                "MINHA",
                 style: TextStyle(color: grey),
               ),
               SizedBox(width: 5),
               Text(
-                "LIST",
+                "LISTA",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
