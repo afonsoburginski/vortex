@@ -32,8 +32,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                 height: size.height * 0.4,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(20),
-                        bottomRight: Radius.circular(20)),
+                        bottomLeft: Radius.circular(5),
+                        bottomRight: Radius.circular(5)),
                     image: DecorationImage(
                         image: NetworkImage(sliders[0]), fit: BoxFit.cover)),
                 child: SafeArea(
@@ -63,7 +63,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     height: 58,
                     width: size.width,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
+                        borderRadius: BorderRadius.circular(5),
                         color: lightBlack),
                     child: Center(
                       child: Row(
@@ -85,7 +85,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                   width: 30,
                                   decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      border: Border.all(width: 1, color: red)),
+                                      border:
+                                          Border.all(width: 1, color: white)),
                                   child: Center(
                                     child: menuBars[index]['icon'],
                                   ),
@@ -194,7 +195,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                               height: 130,
                               width: 120,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
+                                  borderRadius: BorderRadius.circular(5),
                                   boxShadow: [
                                     BoxShadow(
                                         color: lightGrey.withOpacity(0.2),
@@ -241,7 +242,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                 Container(
                                   width: (size.width - 70) * 0.35,
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
+                                      borderRadius: BorderRadius.circular(5),
                                       boxShadow: [
                                         BoxShadow(
                                           color: lightGrey.withOpacity(0.2),
@@ -310,7 +311,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                           height: 180,
                           width: 125,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(5),
                               image: DecorationImage(
                                 image: NetworkImage(netflixOriginals[index]),
                                 fit: BoxFit.cover,

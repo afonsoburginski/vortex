@@ -8,6 +8,7 @@ import 'package:vortex/pages/search_page.dart';
 import 'package:vortex/theme/color.dart';
 import 'package:vortex/util/constant.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RootPage extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _RootPageState extends State<RootPage> {
 
   Widget getAppBar() {
     return PreferredSize(
-      preferredSize: Size.fromHeight(50),
+      preferredSize: Size.fromHeight(60),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -42,7 +43,7 @@ class _RootPageState extends State<RootPage> {
             ),
             SvgPicture.asset(
               "assets/images/logo.svg",
-              width: 80,
+              width: 90,
             ),
             Container(
               height: 35,
@@ -79,19 +80,23 @@ class _RootPageState extends State<RootPage> {
       textStyle: TextStyle(color: white, fontWeight: FontWeight.bold),
       navigationBarButtons: [
         NavigationBarButton(
-          icon: LineIcons.home,
+          icon: FontAwesomeIcons.youtube,
           backgroundColor: black,
         ),
         NavigationBarButton(
-          icon: LineIcons.search,
+          icon: FontAwesomeIcons.youtube,
           backgroundColor: black,
         ),
         NavigationBarButton(
-          icon: LineIcons.youtube,
+          icon: FontAwesomeIcons.youtube,
           backgroundColor: black,
         ),
         NavigationBarButton(
-          icon: LineIcons.download,
+          icon: FontAwesomeIcons.youtube,
+          backgroundColor: black,
+        ),
+        NavigationBarButton(
+          icon: FontAwesomeIcons.youtube,
           backgroundColor: black,
         ),
       ],

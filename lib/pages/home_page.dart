@@ -35,13 +35,13 @@ class _HomePageState extends State<HomePage> {
               margin: EdgeInsets.symmetric(horizontal: 8),
               child: Container(
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(5),
                     image: DecorationImage(
                         image: NetworkImage(sliders[index]),
                         fit: BoxFit.cover)),
                 child: Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(5),
                       color: black.withOpacity(0.2)),
                 ),
               ),
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                     left: index == 0 ? 15 : 10,
                     right: index == (continueWatchings.length - 1) ? 15 : 0),
                 child: InkWell(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(5),
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (_) => MovieDetailPage()));
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                         height: 180,
                         width: 125,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                          borderRadius: BorderRadius.circular(5),
                           image: DecorationImage(
                               image: NetworkImage(
                                   continueWatchings[index]['imageUrl']),
@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
                         image: NetworkImage(myLists[index]),
                         fit: BoxFit.cover,
@@ -232,9 +232,193 @@ class _HomePageState extends State<HomePage> {
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
                         image: NetworkImage(netflixOriginals[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "MINHA",
+                style: TextStyle(color: grey),
+              ),
+              SizedBox(width: 5),
+              Text(
+                "LISTA",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(lista1.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (lista1.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(lista1[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "MINHA",
+                style: TextStyle(color: grey),
+              ),
+              SizedBox(width: 5),
+              Text(
+                "LISTA",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(lista2.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (lista2.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(lista2[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "MINHA",
+                style: TextStyle(color: grey),
+              ),
+              SizedBox(width: 5),
+              Text(
+                "LISTA",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(lista3.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (lista3.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(lista3[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "MINHA",
+                style: TextStyle(color: grey),
+              ),
+              SizedBox(width: 5),
+              Text(
+                "LISTA",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(lista4.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (lista4.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(lista4[index]),
                         fit: BoxFit.cover,
                       )),
                 ),

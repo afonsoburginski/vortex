@@ -3,7 +3,44 @@ import 'package:meedu_player/meedu_player.dart';
 import 'package:vortex/theme/color.dart';
 import 'package:vortex/util/play_movie_page_json.dart';
 import 'package:wakelock/wakelock.dart';
+/* import 'package:youtube_player_iframe/youtube_player_iframe.dart'; */
 
+/* VISUALIZAÇÃO DE VÍDEOS COM O YOUTUBE */
+
+/* class CustomYoutubPlayer extends StatefulWidget {
+  final String youtubeURL;
+  const CustomYoutubPlayer(this.youtubeURL);
+
+  @override
+  _CustomYoutubPlayerState createState() => _CustomYoutubPlayerState();
+}
+
+class _CustomYoutubPlayerState extends State<CustomYoutubPlayer> {
+  late YoutubePlayerController _controller;
+
+  @override
+  Void initState() {
+    _controller = YoutubePlayerController.convertUrlToId(widget.youtubeURL!)!,
+    params: const YoutubePlayerParams(
+      loop: true,
+      color: 'transparent',
+      desktopMode: true,
+      strictRelatedVideos: true,
+      showFullscreenButton: !kIsWeb,
+    ));
+  super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    return SizedBox(
+      height: kIsWeb ? screenSize.height,
+    );
+  }
+} */
+
+/* VISUALIZAÇÃO DE VÍDEOS COM MEEDU_PLAYER */
 class PlayMoviePage extends StatefulWidget {
   @override
   _PlayMoviePageState createState() => _PlayMoviePageState();

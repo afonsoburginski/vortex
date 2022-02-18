@@ -12,4 +12,3 @@ const Color lightGrey = Color(0xffFAFAFA);
 const Color grey = Color(0xffC8C8C8);
 
 const Color green = Color(0xff00C853);
-
