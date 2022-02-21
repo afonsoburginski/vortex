@@ -300,20 +300,18 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: List.generate(netflixOriginals.length, (index) {
+                    children: List.generate(recomended.length, (index) {
                       return Padding(
                         padding: EdgeInsets.only(
                             left: index == 0 ? 15 : 10,
-                            right: index == (netflixOriginals.length - 1)
-                                ? 15
-                                : 0),
+                            right: index == (recomended.length - 1) ? 15 : 0),
                         child: Container(
                           height: 180,
                           width: 125,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
                               image: DecorationImage(
-                                image: NetworkImage(netflixOriginals[index]),
+                                image: NetworkImage(recomended[index]),
                                 fit: BoxFit.cover,
                               )),
                         ),

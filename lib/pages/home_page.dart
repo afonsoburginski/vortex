@@ -156,12 +156,12 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MINHA",
+                "VORTEX",
                 style: TextStyle(color: grey),
               ),
               SizedBox(width: 5),
               Text(
-                "LISTA",
+                "RECOMENDADOS",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -177,18 +177,18 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(myLists.length, (index) {
+            children: List.generate(recomended.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (myLists.length - 1) ? 15 : 0),
+                    right: index == (recomended.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(myLists[index]),
+                        image: NetworkImage(recomended[index]),
                         fit: BoxFit.cover,
                       )),
                 ),
@@ -202,12 +202,7 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "NETFLIX",
-                style: TextStyle(color: grey),
-              ),
-              SizedBox(width: 5),
-              Text(
-                "ORIGINAL",
+                "AÇÃO",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -223,18 +218,18 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(netflixOriginals.length, (index) {
+            children: List.generate(action.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (netflixOriginals.length - 1) ? 15 : 0),
+                    right: index == (action.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(netflixOriginals[index]),
+                        image: NetworkImage(action[index]),
                         fit: BoxFit.cover,
                       )),
                 ),
@@ -248,12 +243,7 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MINHA",
-                style: TextStyle(color: grey),
-              ),
-              SizedBox(width: 5),
-              Text(
-                "LISTA",
+                "COMÉDIA",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -269,18 +259,18 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(lista1.length, (index) {
+            children: List.generate(comedy.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (lista1.length - 1) ? 15 : 0),
+                    right: index == (comedy.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(lista1[index]),
+                        image: NetworkImage(comedy[index]),
                         fit: BoxFit.cover,
                       )),
                 ),
@@ -294,12 +284,7 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MINHA",
-                style: TextStyle(color: grey),
-              ),
-              SizedBox(width: 5),
-              Text(
-                "LISTA",
+                "ROMANCE",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -315,18 +300,18 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(lista2.length, (index) {
+            children: List.generate(romance.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (lista2.length - 1) ? 15 : 0),
+                    right: index == (romance.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(lista2[index]),
+                        image: NetworkImage(romance[index]),
                         fit: BoxFit.cover,
                       )),
                 ),
@@ -340,12 +325,7 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MINHA",
-                style: TextStyle(color: grey),
-              ),
-              SizedBox(width: 5),
-              Text(
-                "LISTA",
+                "CARTOON",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -361,18 +341,18 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(lista3.length, (index) {
+            children: List.generate(cartoon.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (lista3.length - 1) ? 15 : 0),
+                    right: index == (cartoon.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(lista3[index]),
+                        image: NetworkImage(cartoon[index]),
                         fit: BoxFit.cover,
                       )),
                 ),
@@ -386,12 +366,7 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             children: [
               Text(
-                "MINHA",
-                style: TextStyle(color: grey),
-              ),
-              SizedBox(width: 5),
-              Text(
-                "LISTA",
+                "TERROR",
                 style: TextStyle(color: white, fontWeight: FontWeight.w500),
               ),
               SizedBox(width: 8),
@@ -407,18 +382,100 @@ class _HomePageState extends State<HomePage> {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: List.generate(lista4.length, (index) {
+            children: List.generate(horror.length, (index) {
               return Padding(
                 padding: EdgeInsets.only(
                     left: index == 0 ? 15 : 10,
-                    right: index == (lista4.length - 1) ? 15 : 0),
+                    right: index == (horror.length - 1) ? 15 : 0),
                 child: Container(
                   height: 180,
                   width: 125,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
                       image: DecorationImage(
-                        image: NetworkImage(lista4[index]),
+                        image: NetworkImage(horror[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "FICÇÃO CIENTÍFICA",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(scienceFiction.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (scienceFiction.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(scienceFiction[index]),
+                        fit: BoxFit.cover,
+                      )),
+                ),
+              );
+            }),
+          ),
+        ),
+        SizedBox(height: 25),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Text(
+                "DOCUMENTÁRIOS",
+                style: TextStyle(color: white, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.arrow_forward_ios_sharp,
+                color: grey,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(documentary.length, (index) {
+              return Padding(
+                padding: EdgeInsets.only(
+                    left: index == 0 ? 15 : 10,
+                    right: index == (documentary.length - 1) ? 15 : 0),
+                child: Container(
+                  height: 180,
+                  width: 125,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(documentary[index]),
                         fit: BoxFit.cover,
                       )),
                 ),

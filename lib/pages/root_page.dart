@@ -80,7 +80,7 @@ class _RootPageState extends State<RootPage> {
       textStyle: TextStyle(color: white, fontWeight: FontWeight.bold),
       navigationBarButtons: [
         NavigationBarButton(
-          icon: FontAwesomeIcons.youtube,
+          icon: FontAwesomeIcons.home,
           backgroundColor: black,
         ),
         NavigationBarButton(
@@ -92,7 +92,7 @@ class _RootPageState extends State<RootPage> {
           backgroundColor: black,
         ),
         NavigationBarButton(
-          icon: FontAwesomeIcons.youtube,
+          icon: FontAwesomeIcons.search,
           backgroundColor: black,
         ),
         NavigationBarButton(
