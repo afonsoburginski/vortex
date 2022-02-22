@@ -24,9 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   line_icons: ^2.0.0
-  font_awesome_flutter: ^9.2.0
   flutter_svg: ^0.22.0
   cupertino_icons: ^1.0.4
+  tmdb_api: ^1.2.7
 
   responsive_navigation_bar: ^2.1.2
   carousel_slider: ^4.0.0

@@ -24,7 +24,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
     return Column(
       children: [
         Container(
-          height: size.height * 0.42,
+          height: size.height * 0.4,
           width: size.width,
           child: Stack(
             children: [

@@ -26,9 +26,9 @@ class _HomePageState extends State<HomePage> {
         CarouselSlider(
           options: CarouselOptions(
             enlargeCenterPage: true,
-            aspectRatio: 2.0,
-            viewportFraction: 0.96,
-            autoPlay: true,
+            aspectRatio: 1.5,
+            viewportFraction: 0.95,
+            autoPlay: false,
           ),
           items: List.generate(sliders.length, (index) {
             return Container(
@@ -42,11 +42,63 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: black.withOpacity(0.2)),
+                      color: black.withOpacity(0.5)),
                 ),
               ),
             );
           }),
+        ),
+        SizedBox(height: 20),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 5),
+          child: Row(
+            children: List.generate(recomended.length, (index) {
+              return Padding(
+                  padding: EdgeInsets.only(
+                      left: index == 0 ? 15 : 10,
+                      right: index == (recomended.length - 1) ? 15 : 0),
+                  child: Container(
+                      height: 60,
+                      width: 125,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          image: DecorationImage(
+                            image: NetworkImage(recomended[index]),
+                            fit: BoxFit.cover,
+                          )),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                  offset: Offset(0, 5),
+                                  color: Color(0x4960F9).withOpacity(.6),
+                                  spreadRadius: 5,
+                                  blurRadius: 500)
+                            ],
+                            borderRadius: BorderRadius.circular(5),
+                            gradient: const LinearGradient(colors: [
+                              Color(0xff4960F9),
+                            ])),
+                        child: MaterialButton(
+                          onPressed: () {},
+                          splashColor: Color(0xff4960F9),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                          padding: const EdgeInsets.all(0.0),
+                          child: Container(
+                              constraints: const BoxConstraints(
+                                  minWidth: 50.0,
+                                  minHeight:
+                                      10.0), // min sizes for Material buttons
+                              alignment: Alignment.center,
+                              child: Text('#CATEGORIA',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600))),
+                        ),
+                      )));
+            }),
+          ),
         ),
         SizedBox(height: 30),
         Padding(

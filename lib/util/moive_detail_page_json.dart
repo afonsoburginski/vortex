@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:vortex/theme/color.dart';
 
-const String percentageMatch = "84% match";
-const String year = "2008";
-const String age = "15";
-const String time = "1h 34m";
+const String percentageMatch = "99% Avaliações";
+const String year = "2019";
+const String age = "16";
+const String time = "1h 35m";
 const String description =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+    "A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira Ordem.";
 
-const String directorName = "Alex Pina";
+const String directorName = "Jon Favreau";
 const String directorImage =
-    "https://images.unsplash.com/photo-1559548331-f9cb98001426?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60";
+    "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8MtRRnEHaBSw8Ztdl8saXiw1egP.jpg";
 const String directorDescription =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+    "Jonathan Favreau (nascido em 19 de outubro de 1966) é um ator, diretor, produtor e roteirista americano. Ele produz filmes sob sua bandeira, Fairview Entertainment. A empresa foi creditada como co-produtores na maioria dos empreendimentos de direção de Favreau.";
 
 const List castAndCrews = [
   {

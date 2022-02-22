@@ -3,12 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:vortex/pages/coming_soon_page.dart';
 import 'package:vortex/pages/download_page.dart';
+import 'package:vortex/pages/chromecast_page.dart';
 import 'package:vortex/pages/home_page.dart';
 import 'package:vortex/pages/search_page.dart';
 import 'package:vortex/theme/color.dart';
 import 'package:vortex/util/constant.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RootPage extends StatefulWidget {
   @override
@@ -31,7 +31,7 @@ class _RootPageState extends State<RootPage> {
 
   Widget getAppBar() {
     return PreferredSize(
-      preferredSize: Size.fromHeight(60),
+      preferredSize: Size.fromHeight(50),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -46,8 +46,8 @@ class _RootPageState extends State<RootPage> {
               width: 90,
             ),
             Container(
-              height: 35,
-              width: 35,
+              height: 30,
+              width: 60,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(width: 1, color: white),
@@ -68,6 +68,7 @@ class _RootPageState extends State<RootPage> {
         HomePage(),
         SearchPage(),
         ComingSoonPage(),
+        ChromecastPage(),
         DownloadPage(),
       ],
     );
@@ -76,28 +77,34 @@ class _RootPageState extends State<RootPage> {
   Widget getFloatingActionButton() {
     return NavigationBar(
       selectedIndex: selectedIndex,
+      backgroundColor: Colors.transparent,
       showActiveButtonText: false,
       textStyle: TextStyle(color: white, fontWeight: FontWeight.bold),
       navigationBarButtons: [
         NavigationBarButton(
-          icon: FontAwesomeIcons.home,
-          backgroundColor: black,
+          icon: Icons.home_rounded,
+          text: "Home",
+          backgroundColor: Colors.transparent,
         ),
         NavigationBarButton(
-          icon: FontAwesomeIcons.youtube,
-          backgroundColor: black,
+          icon: LineIcons.search,
+          text: "Pesquisar",
+          backgroundColor: Colors.transparent,
         ),
         NavigationBarButton(
-          icon: FontAwesomeIcons.youtube,
-          backgroundColor: black,
+          icon: Icons.smart_display_rounded,
+          text: "Em Breve",
+          backgroundColor: Colors.transparent,
         ),
         NavigationBarButton(
-          icon: FontAwesomeIcons.search,
-          backgroundColor: black,
+          icon: LineIcons.chromecast,
+          text: "Chromecast",
+          backgroundColor: Colors.transparent,
         ),
         NavigationBarButton(
-          icon: FontAwesomeIcons.youtube,
-          backgroundColor: black,
+          icon: LineIcons.download,
+          text: "Downloads",
+          backgroundColor: Colors.transparent,
         ),
       ],
       onTabChange: (index) {
