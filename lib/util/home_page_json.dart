@@ -12,11 +12,11 @@ final tmdbWithCustomLogs = TMDB(
 );
 
 const List sliders = [
-  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qrT2rEzUuaqdC2QOE28WK36ue9H.jpg',
+  'https://www.nerdsite.com.br/wp-content/uploads/2019/12/Wonder-Woman-1984-Timeline-Explained.jpg',
   'https://www.okseries.co/wp-content/uploads/2017/05/the-100-saison-7-5-768x450-1.jpg',
-  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hq2igFqb31fDqGotz8ZuUfwKgn8.jpg',
-  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hq2igFqb31fDqGotz8ZuUfwKgn8.jpg',
-  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hq2igFqb31fDqGotz8ZuUfwKgn8.jpg',
+  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg',
+  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg',
+  'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j5f5bRlpChRuyHdexmeSnQmklDt.jpg',
 ];
 
 const List buttons = [

@@ -42,15 +42,16 @@ class _HomePageState extends State<HomePage> {
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
-                      color: black.withOpacity(0.5)),
+                      color: black.withOpacity(0.3)),
                 ),
               ),
             );
           }),
         ),
-        SizedBox(height: 20),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 5),
+        /* BOTOES */
+        SizedBox(height: 25),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
           child: Row(
             children: List.generate(recomended.length, (index) {
               return Padding(
@@ -68,17 +69,14 @@ class _HomePageState extends State<HomePage> {
                           )),
                       child: Container(
                         decoration: BoxDecoration(
-                            boxShadow: [
-                              BoxShadow(
-                                  offset: Offset(0, 5),
-                                  color: Color(0x4960F9).withOpacity(.6),
-                                  spreadRadius: 5,
-                                  blurRadius: 500)
-                            ],
-                            borderRadius: BorderRadius.circular(5),
-                            gradient: const LinearGradient(colors: [
-                              Color(0xff4960F9),
-                            ])),
+                          boxShadow: [
+                            BoxShadow(
+                                offset: Offset(0, 8),
+                                color: Color(0x4960F9).withOpacity(.9),
+                                spreadRadius: 5,
+                                blurRadius: 600)
+                          ],
+                        ),
                         child: MaterialButton(
                           onPressed: () {},
                           splashColor: Color(0xff4960F9),
@@ -91,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                                   minHeight:
                                       10.0), // min sizes for Material buttons
                               alignment: Alignment.center,
-                              child: Text('#CATEGORIA',
+                              child: Text('#CA',
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600))),
