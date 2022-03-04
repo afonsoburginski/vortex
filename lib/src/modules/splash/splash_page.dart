@@ -15,14 +15,14 @@ class SplashPage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF6F58FF), Color(0xFF9F54FC)],
+            colors: [Color(0xff001120), Color(0xff001120)],
           ),
         ),
         child: Center(
           child: SvgPicture.asset(
-            AppImages.logoFull,
-            height: 320,
-            width: 320,
+            AppImages.vortexLogoDegrade,
+            height: 90,
+            width: 90,
           ),
         ),
       ),
