@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vortex/src/modules/splash/login_page.dart';
-import 'package:vortex/src/modules/splash/splash_page.dart';
+import 'package:vortex/src/modules/login/login_page.dart';
 //import 'package:vortex/src/modules/splash/splash_page.dart';
 
 import 'shared/themes/app_colors.dart';
@@ -19,7 +18,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: AppColors.primary,
       ),
-      home: const SplashPage(),
+      home: const LoginPage(),
     );
   }
 }

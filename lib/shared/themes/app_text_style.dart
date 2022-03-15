@@ -3,37 +3,42 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:vortex/shared/themes/app_colors.dart';
 
 class TextStyles {
-  static final titleHome = GoogleFonts.lexendDeca(
+  static final titleHome = GoogleFonts.inter(
     fontSize: 32,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final titleRegular = GoogleFonts.lexendDeca(
+  static final titleRegular = GoogleFonts.inter(
     fontSize: 20,
     fontWeight: FontWeight.w400,
     color: AppColors.background,
   );
-  static final titleBoldHeading = GoogleFonts.lexendDeca(
+  static final titleBoldHeading = GoogleFonts.inter(
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final titleBoldBackground = GoogleFonts.lexendDeca(
+  static final titleBoldBackground = GoogleFonts.inter(
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.background,
   );
-  static final titleListTile = GoogleFonts.lexendDeca(
+  static final titleBold = GoogleFonts.inter(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: AppColors.primary,
+  );
+  static final titleListTile = GoogleFonts.inter(
     fontSize: 17,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final trailingRegular = GoogleFonts.lexendDeca(
+  static final trailingRegular = GoogleFonts.inter(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     color: AppColors.heading,
   );
-  static final trailingBold = GoogleFonts.lexendDeca(
+  static final trailingBold = GoogleFonts.inter(
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,

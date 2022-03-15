@@ -1,5 +1,8 @@
 class AppImages {
-  static const vortexLogo = "assets/images/vortex-logo.svg";
+  static const logo = "assets/images/logo-full.png";
+  static const logoFull = "assets/images/logo-full.svg";
+  static const logoIcon = "assets/images/logo-icon.svg";
+  static const logoTitle = "assets/images/logo-title.svg";
 
   static const apple = "assets/images/apple-original.svg";
   static const google = "assets/images/facebook-original.svg";

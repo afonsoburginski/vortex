@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vortex/shared/themes/app_colors.dart';
+import 'package:vortex/shared/themes/app_text_style.dart';
 
 class SignInButton extends StatelessWidget {
   final String text;
@@ -8,22 +10,31 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const primaryColor = Color(0xFF6F58FF);
-    const secondaryColor = Color(0xFF9F54FC);
-    const accentColor = Color(0xffffffff);
+    const secondaryColor = Color(0xFF6F58FF);
 
-    const double borderRadius = 15;
+    const double borderRadius = 10;
 
     return DecoratedBox(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(borderRadius),
-            gradient:
-                const LinearGradient(colors: [primaryColor, secondaryColor])),
+          boxShadow: [
+            BoxShadow(
+              offset: const Offset(0, 8),
+              color: AppColors.flourishing.withOpacity(1),
+              spreadRadius: 5,
+              blurRadius: 600,
+            ),
+          ],
+          borderRadius: BorderRadius.circular(borderRadius),
+          gradient: const LinearGradient(
+            colors: [primaryColor, secondaryColor],
+          ),
+        ),
         child: ElevatedButton(
           style: ButtonStyle(
               elevation: MaterialStateProperty.all(0),
               alignment: Alignment.center,
               padding: MaterialStateProperty.all(const EdgeInsets.only(
-                  right: 75, left: 75, top: 15, bottom: 15)),
+                  right: 100, left: 100, top: 12, bottom: 13)),
               backgroundColor: MaterialStateProperty.all(Colors.transparent),
               shape: MaterialStateProperty.all(
                 RoundedRectangleBorder(
@@ -32,7 +43,8 @@ class SignInButton extends StatelessWidget {
           onPressed: onPressed,
           child: Text(
             text,
-            style: const TextStyle(color: accentColor, fontSize: 16),
+            style: TextStyles.titleRegular,
+            // style: const TextStyle(color: accentColor,  fontSize: TextStyles()),
           ),
         ));
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
+// import 'package:line_icons/line_icons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:vortex/src/modules/util/home_page_json.dart';
 

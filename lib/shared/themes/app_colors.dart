@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static const flourishing = Color(0xFF4960F9);
   static const splash = BoxDecoration(
-      gradient: LinearGradient(colors: [Color(0xFF6F58FF), Color(0xFF9F54FC)]));
-  static const primary = Color(0xFF5D5FEF);
+      gradient: LinearGradient(colors: [Color(0xFF1e2428), Color(0xFF30373c)]));
+
+  static const primary = Color(0xFF6F58FF);
   static const grey = Color(0xFF585666);
   static const delete = Color(0xFFE83F5B);
   static const heading = Color(0xFF585666);
