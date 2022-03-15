@@ -8,5 +8,6 @@ class AppImages {
   static const google = "assets/images/facebook-original.svg";
   static const facebook = "assets/images/google-original.svg";
 
-  static const loginBackground = "assets/images/LoginBackground.svg";
+  static const loginBackground = "assets/images/login-background.svg";
+  static const registerBackground = "assets/images/register-background.png";
 }

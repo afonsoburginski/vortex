@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vortex/shared/themes/app_colors.dart';
@@ -38,6 +40,16 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               width: size.width,
               height: size.height,
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              top: 0,
+              child: Image.asset(
+                AppImages.registerBackground,
+                fit: BoxFit.cover,
+              ),
             ),
             Positioned(
               bottom: size.height * 0.25,
