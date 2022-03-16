@@ -45,6 +45,7 @@ dependencies:
   carousel_slider: ^4.0.0
   line_icons: ^2.0.1
   wakelock: ^0.6.1
+  video_player: ^2.3.0
 
 dev_dependencies:
   flutter_test:
