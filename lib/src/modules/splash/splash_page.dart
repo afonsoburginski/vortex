@@ -33,7 +33,7 @@ class _SplashPageState extends State<SplashPage> {
     _controller.play();
 
     //add delay till video is complite
-    await Future.delayed(const Duration(seconds: 4));
+    await Future.delayed(const Duration(seconds: 2));
 
     // navigating to home Page
     Navigator.pushNamed(context, '/');
