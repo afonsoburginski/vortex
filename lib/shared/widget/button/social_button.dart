@@ -17,74 +17,23 @@ class SocialButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SvgPicture.asset(
-              AppImages.apple,
-              height: 32,
-              width: 32,
-            ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, "/barcode_scanner");
+                Navigator.pushNamed(context, "/login");
               },
               child: SizedBox(
-                  height: 56,
+                  height: 64,
                   child: Expanded(
                     child: SvgPicture.asset(
                       AppImages.google,
-                      height: 32,
-                      width: 32,
+                      height: 42,
+                      width: 42,
                     ),
                   )),
             ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.description_outlined,
-                color: AppColors.body,
-              ),
-            )
           ],
         ),
       ),
-      // child: Container(
-      //   height: 56,
-      //   child: Row(
-      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //     children: [
-      //       SvgPicture.asset(
-      //         AppImages.google,
-      //         height: 32,
-      //         width: 32,
-      //       ),
-      //       GestureDetector(
-      //         onTap: () {
-      //           Navigator.pushNamed(context, "/barcode_scanner");
-      //         },
-      //         child: Container(
-      //             height: 48,
-      //             width: 48,
-      //             decoration: BoxDecoration(
-      //                 color: AppColors.primary,
-      //                 borderRadius: BorderRadius.circular(10)),
-      //             child: Expanded(
-      //               child: SvgPicture.asset(
-      //                 AppImages.google,
-      //                 height: 32,
-      //                 width: 32,
-      //                 color: AppColors.background,
-      //               ),
-      //             )),
-      //       ),
-      //       IconButton(
-      //         onPressed: () {},
-      //         icon: const Icon(
-      //           Icons.description_outlined,
-      //           color: AppColors.body,
-      //         ),
-      //       )
-      //     ],
-      //   ),
-      // ),
     );
   }
 }

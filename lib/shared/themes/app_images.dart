@@ -10,5 +10,5 @@ class AppImages {
   static const loginBackground = "assets/images/login-background.svg";
   static const registerBackground = "assets/images/register-background.png";
 
-  static const splashvideo = "assets/images/nike_animation.mp4";
+  static const splashvideo = "assets/images/vortex_animation.mp4";
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:video_player/video_player.dart';
-import 'package:vortex/shared/themes/app_colors.dart';
+import 'package:vortex/shared/Auth/auth_controller.dart';
 import 'package:vortex/shared/themes/app_images.dart';
 
 class SplashPage extends StatefulWidget {
@@ -47,6 +46,8 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
+    final authController = AuthController();
+    authController.currentUser(context);
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
