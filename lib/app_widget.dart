@@ -15,13 +15,13 @@ class AppWidget extends StatelessWidget {
         primarySwatch: Colors.grey,
         primaryColor: AppColors.primary,
       ),
-      home: LoginPage(),
-      // initialRoute: "/login",
-      // routes: {
-      //   "/splash": (context) => const SplashPage(),
-      //   // "/home": (context) => const HomePage(),
-      //   "/login": (context) => const LoginPage(),
-      // },
+      // home: LoginPage(),
+      initialRoute: "/login",
+      routes: {
+        "/splash": (context) => const SplashPage(),
+        // "/home": (context) => const HomePage(),
+        "/login": (context) => const LoginPage(),
+      },
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vortex/shared/themes/app_colors.dart';
 import 'package:vortex/shared/themes/app_images.dart';
-import 'package:vortex/shared/themes/app_text_style.dart';
+// import 'package:vortex/shared/themes/app_text_style.dart';
 
 class SocialButton extends StatelessWidget {
   final VoidCallback onTap;
@@ -12,8 +12,7 @@ class SocialButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-<<<<<<< HEAD
-      child: Container(
+      child: SizedBox(
         height: 56,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -27,7 +26,7 @@ class SocialButton extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, "/barcode_scanner");
               },
-              child: Container(
+              child: SizedBox(
                   height: 56,
                   child: Expanded(
                     child: SvgPicture.asset(
@@ -47,8 +46,6 @@ class SocialButton extends StatelessWidget {
           ],
         ),
       ),
-=======
->>>>>>> jk-develop
       // child: Container(
       //   height: 56,
       //   child: Row(
@@ -88,52 +85,6 @@ class SocialButton extends StatelessWidget {
       //     ],
       //   ),
       // ),
-      child: Container(
-        height: 56,
-        decoration: BoxDecoration(
-            color: AppColors.shape,
-            borderRadius: BorderRadius.circular(5),
-            border: const Border.fromBorderSide(BorderSide(
-              color: AppColors.stroke,
-            ))),
-        child: Row(
-          children: [
-            Expanded(
-                flex: 1,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SvgPicture.asset(
-                      AppImages.google,
-                      height: 24,
-                      width: 24,
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      height: 56,
-                      width: 1,
-                      color: AppColors.stroke,
-                    )
-                  ],
-                )),
-            Expanded(
-              flex: 3,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Entrar com Google",
-                    style: TextStyles.buttonGray,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

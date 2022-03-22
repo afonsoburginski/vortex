@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'app_widget.dart';
+import 'package:vortex/app_widget.dart';
 
 void main() {
   runApp(const AppFirebase());
@@ -18,37 +18,35 @@ class _AppFirebaseState extends State<AppFirebase> {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return MaterialApp(
-      title: 'Vortex',
-      theme: ThemeData(
-        primaryColor: AppColors.primary,
-      ),
-      home: const LoginPage(),
-    );
-=======
+    // return MaterialApp(
+    //   title: 'Vortex',
+    //   theme: ThemeData(
+    //     primaryColor: AppColors.primary,
+    //   ),
+    //   home: const LoginPage(),
+    // );
     return FutureBuilder(
-        future: _initialization,
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return const Material(
-              child: Center(
-                child: Text(
-                  "Não foi possível inicializar o Firebase",
-                  textDirection: TextDirection.ltr,
-                ),
+      future: _initialization,
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return const Material(
+            child: Center(
+              child: Text(
+                "Não foi possível inicializar o Firebase",
+                textDirection: TextDirection.ltr,
               ),
-            );
-          } else if (snapshot.connectionState == ConnectionState.done) {
-            return const AppWidget();
-          } else {
-            return const Material(
-              child: Center(
-                child: CircularProgressIndicator(),
-              ),
-            );
-          }
-        });
->>>>>>> jk-develop
+            ),
+          );
+        } else if (snapshot.connectionState == ConnectionState.done) {
+          return const AppWidget();
+        } else {
+          return const Material(
+            child: Center(
+              child: CircularProgressIndicator(),
+            ),
+          );
+        }
+      },
+    );
   }
 }

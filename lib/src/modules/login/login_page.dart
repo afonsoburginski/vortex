@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -32,8 +30,8 @@ class _LoginPageState extends State<LoginPage> {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, 8),
-              color: Color(0xff111519).withOpacity(1),
+              color: const Color.fromRGBO(17, 21, 25, 1).withOpacity(1),
+              offset: const Offset(0, 8),
               spreadRadius: 10,
               blurRadius: 800,
             ),
@@ -41,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Stack(
           children: [
-            Container(
+            SizedBox(
               width: size.width,
               height: size.height,
             ),
