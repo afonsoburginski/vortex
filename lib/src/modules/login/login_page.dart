@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:vortex/shared/themes/app_colors.dart';
 //import 'package:vortex/shared/themes/app_colors.dart';
 import 'package:vortex/shared/themes/app_images.dart';
@@ -135,8 +136,20 @@ class _LoginPageState extends State<LoginPage> {
                     padding:
                         const EdgeInsets.only(top: 100, left: 85, right: 85),
                     child: SocialButton(
-                      onTap: () {
-                        controller.googleSignIn(context);
+                      onTap: () async {
+                        GoogleSignIn _googleSignIn = GoogleSignIn(
+                          scopes: [
+                            'email',
+                            'https://www.googleapis.com/auth/contacts.readonly',
+                          ],
+                        );
+                        try {
+                          final response = await _googleSignIn.signIn();
+                          print(response);
+                        } catch (error) {
+                          print(error);
+                        }
+                        // controller.googleSignIn(context);
                       },
                     ),
                   )
