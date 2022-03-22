@@ -1,6 +1,4 @@
 class AppImages {
-  static const splashvideo = "assets/images/nike_animation.mp4";
-
   static const logoFull = "assets/images/vortex-logo.svg";
   // static const logoIcon = "assets/images/logo-icon.svg";
   // static const logoTitle = "assets/images/logo-title.svg";
@@ -11,4 +9,6 @@ class AppImages {
 
   static const loginBackground = "assets/images/login-background.svg";
   static const registerBackground = "assets/images/register-background.png";
+
+  static const splashvideo = "assets/images/nike_animation.mp4";
 }
