@@ -24,7 +24,7 @@ class SocialButton extends StatelessWidget {
               child: SizedBox(
                   height: 64,
                   child: Expanded(
-                    child: SvgPicture.asset(
+                    child: Image.asset(
                       AppImages.google,
                       height: 42,
                       width: 42,

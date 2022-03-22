@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
               width: size.width,
               height: size.height,
             ),
-            Positioned(
+            /* Positioned(
               bottom: 0,
               left: 0,
               right: 0,
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                 AppImages.registerBackground,
                 fit: BoxFit.cover,
               ),
-            ),
+            ), */
             Positioned(
               bottom: size.height * 0.25,
               left: 0,
@@ -67,8 +67,8 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Positioned(
               bottom: 50,
-              left: 65,
-              right: 65,
+              left: 70,
+              right: 70,
               top: 0,
               child: SvgPicture.asset(
                 AppImages.logoFull,
