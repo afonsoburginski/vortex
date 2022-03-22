@@ -18,7 +18,7 @@ class SocialButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SvgPicture.asset(
-              AppImages.google,
+              AppImages.apple,
               height: 32,
               width: 32,
             ),
@@ -27,17 +27,12 @@ class SocialButton extends StatelessWidget {
                 Navigator.pushNamed(context, "/barcode_scanner");
               },
               child: Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.circular(10)),
+                  height: 56,
                   child: Expanded(
                     child: SvgPicture.asset(
                       AppImages.google,
                       height: 32,
                       width: 32,
-                      color: AppColors.background,
                     ),
                   )),
             ),

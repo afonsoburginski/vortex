@@ -25,18 +25,18 @@ class _SplashPageState extends State<SplashPage> {
       })
       ..setVolume(0.0);
 
-    _playVideo(1);
+    _playVideo();
   }
 
-  void _playVideo(int i) async {
+  void _playVideo() async {
     // playing video
     _controller.play();
 
     //add delay till video is complite
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 4));
 
     // navigating to home Page
-    Navigator.pushNamed(context, '/');
+    Navigator.pushNamed(context, '/LoginController');
   }
 
   @override
