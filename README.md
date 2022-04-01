@@ -18,7 +18,8 @@ The project was inspired by the following design.
 
 ## Inspiration:
 
--  https://lnkd.in/gtvf8nym
+-  https://www.primevideo.com/
+-  https://www.netflix.com/
 
 
 ### Functionalities
