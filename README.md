@@ -1,7 +1,7 @@
 # Vortex Play
 
 <p align="center">
-    <img src="./assets/images/vortex.png" alt="Logo" height=460>
+    <img src="assets/images/vortex.png" alt="Logo" height=460>
 </p>
     
 
