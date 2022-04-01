@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vortex/src/modules/home/home_page.dart';
 import 'package:vortex/src/modules/login/login_page.dart';
 import 'package:vortex/src/modules/splash/splash_page.dart';
 //import 'package:vortex/src/modules/splash/splash_page.dart';
@@ -19,7 +20,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: AppColors.primary,
       ),
-      home: const LoginPage(),
+      home: const HomePage(),
     );
   }
 }

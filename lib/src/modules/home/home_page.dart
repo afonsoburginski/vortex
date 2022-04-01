@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:vortex/shared/widget/slide/slides_widget.dart';
@@ -36,8 +36,7 @@ class _HomePageState extends State<HomePage> {
       child: CarrouselWidget(
         onTap: () {},
       ));
-      /* BOTOES */
-      SizedBox(height: 25),
+      SizedBox(height: 25);,
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -193,4 +192,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
- */
