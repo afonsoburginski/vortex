@@ -1,4 +1,24 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(152),
+        child: Container(),
+      ),
+    );
+  }
+}
+
+
+/* import 'package:flutter/material.dart';
+>>>>>>> b0aa9a6f7e28790249ceb057e180e00813e15ea0
 import 'package:line_icons/line_icons.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:vortex/shared/widget/slide/slides_widget.dart';

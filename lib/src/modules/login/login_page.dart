@@ -1,7 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:vortex/shared/themes/app_colors.dart';
 //import 'package:vortex/shared/themes/app_colors.dart';
 import 'package:vortex/shared/themes/app_images.dart';
@@ -31,8 +30,8 @@ class _LoginPageState extends State<LoginPage> {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, 8),
-              color: Color(0xff111519).withOpacity(1),
+              color: const Color.fromRGBO(17, 21, 25, 1).withOpacity(1),
+              offset: const Offset(0, 8),
               spreadRadius: 10,
               blurRadius: 800,
             ),
@@ -40,11 +39,11 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Stack(
           children: [
-            Container(
+            SizedBox(
               width: size.width,
               height: size.height,
             ),
-            Positioned(
+            /* Positioned(
               bottom: 0,
               left: 0,
               right: 0,
@@ -53,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                 AppImages.registerBackground,
                 fit: BoxFit.cover,
               ),
-            ),
+            ), */
             Positioned(
               bottom: size.height * 0.25,
               left: 0,
@@ -68,8 +67,8 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Positioned(
               bottom: 50,
-              left: 65,
-              right: 65,
+              left: 70,
+              right: 70,
               top: 0,
               child: SvgPicture.asset(
                 AppImages.logoFull,
