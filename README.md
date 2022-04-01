@@ -35,7 +35,7 @@ The project was inspired by the following design.
 Make a clone of this repository and access the directory.
 
 ```bash
-$ git clone git@github.com:afonsoburginski/flutter-amazon-ui.git && cd flutter-amazon-ui
+$ git clone git@github.com:afonsoburginski/vortex.git && cd vortex
 ```
 
 
@@ -59,7 +59,7 @@ Go to `fork` and clone the project from your user.
 
 ```bash
 # Cloning project
-$ git clone https://github.com/YOUR-USERNAME/flutter-amazon-ui.git
+$ git clone https://github.com/YOUR-USERNAME/vortex.git
 
 # Create a branch
 $ git branch my-change
